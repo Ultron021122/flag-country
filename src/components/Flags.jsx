@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import { Loading } from '../Skeleton';
 
 export function Flags() {
     const [datos, setDatos] = useState([]);
@@ -20,7 +21,7 @@ export function Flags() {
     }, []);
 
     if (load) {
-        return <p>load...</p>;
+        return <Loading />;
     }
     if (error) {
         return <p>Error al cargar datos: {error.message}</p>;
