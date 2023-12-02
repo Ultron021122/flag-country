@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Disclosure } from '@headlessui/react'
 import { BellIcon } from '@heroicons/react/24/outline'
 
@@ -10,11 +11,11 @@ export function Navbar() {
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               </div>
               <div className="flex flex-1 sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <NavLink to="/" className="flex flex-shrink-0 items-center">
                     <h2 className='px-3 py-2 text-xl text-bold text-white'>
                         Where in the world?
                     </h2>
-                </div>
+                </NavLink>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
