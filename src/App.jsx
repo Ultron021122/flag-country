@@ -11,7 +11,7 @@ export function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Flags />} />
-          <Route path="/pais/:id" element={<Country />} />
+          <Route path="/country/:id" element={<Country />} />
         </Routes>
       </div>
     </Router>
