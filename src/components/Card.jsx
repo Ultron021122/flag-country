@@ -10,7 +10,7 @@ const Card = ({ flag, name, population, region, capital }) => {
     };
 
     return (
-        <div className="max-w-sm bg-white border border-gray-300 rounded-lg shadow-md" onClick={() => handleClick(name)}>
+        <div className="max-w-sm bg-white rounded-lg shadow-md" onClick={() => handleClick(name)}>
             <img src={flag} className='object-cover h-48 w-full rounded-t-sm' alt={`Bandera de ${name}`} />
             <div className='px-2 py-4 w-4/5 mx-auto'>
                 <h2 className='font-bold text-2xl'>{name}</h2>
