@@ -29,7 +29,7 @@ export function Flags() {
 
     return (
         <div className='container p-2 mx-auto my-5'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                 {datos.map((pais, index) => (
                     <Card key={index} flag={pais.flags.svg} name={pais.name} population={pais.population} region={pais.region} capital={pais.capital} />
                 ))}
