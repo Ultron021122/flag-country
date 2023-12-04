@@ -60,7 +60,7 @@ export const Country = () => {
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                         <ul className="max-w-md space-y-0.5 list-none list-inside">
                             <li className="font-semibold">Native Name: <span className='font-normal'>{country.nativeName}</span></li>
-                            <li className="font-semibold">Population: <span className='font-normal'>{country.population}</span></li>
+                            <li className="font-semibold">Population: <span className='font-normal'>{country.population.toLocaleString('es-ES')}</span></li>
                             <li className="font-semibold">Region: <span className='font-normal'>{country.region}</span></li>
                             <li className="font-semibold">Sub Region: <span className='font-normal'>{country.subregion}</span></li>
                             <li className="font-semibold">Capital: <span className='font-normal'>{country.capital ? country.capital : "Value not found"}</span></li>
