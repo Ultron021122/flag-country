@@ -18,7 +18,7 @@ export const Navbar = () => {
   }, [darkToggle]);
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="border border-gray-200 dark:bg-gray-700 dark:border-none">
       <>
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
@@ -26,7 +26,7 @@ export const Navbar = () => {
             </div>
             <div className="flex flex-1 sm:items-stretch sm:justify-start">
               <NavLink to="/" className="flex flex-shrink-0 items-center">
-                <h2 className='px-3 py-2 text-xl font-bold text-white'>
+                <h2 className='px-3 py-2 text-2xl font-bold text-black dark:text-white'>
                   Where in the world?
                 </h2>
               </NavLink>

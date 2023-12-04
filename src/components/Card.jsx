@@ -10,14 +10,14 @@ const Card = ({ flag, name, population, region, capital }) => {
     };
 
     return (
-        <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-blue-400" onClick={() => handleClick(name)}>
+        <div className="max-w-sm bg-white rounded-lg shadow-md shadow-gray-400 dark:bg-gray-700 dark:shadow-gray-900" onClick={() => handleClick(name)}>
             <img src={flag} className='object-cover h-48 w-full rounded-t-sm' alt={`Bandera de ${name}`} />
             <div className='px-2 py-4 w-4/5 mx-auto'>
-                <h2 className='font-bold text-2xl'>{name}</h2>
-                <div className=''>
-                    <p>Population: {population.toLocaleString('es-ES')}</p>
-                    <p>Region: {region}</p>
-                    <p>Capital: {capital ? capital : "Value not found"}</p>
+                <h2 className='font-bold text-2xl dark:text-white'>{name}</h2>
+                <div className='py-2 mb-2'>
+                    <p className='font-semibold dark:text-gray-100'>Population: <span className='font-normal dark:text-gray-300'>{population.toLocaleString('es-ES')}</span></p>
+                    <p className='font-semibold dark:text-gray-100'>Region: <span className='font-normal dark:text-gray-300'>{region}</span></p>
+                    <p className='font-semibold dark:text-gray-100'>Capital: <span className='font-normal dark:text-gray-300'>{capital ? capital : "Value not found"}</span></p>
                 </div>
             </div>
         </div>
