@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Loading } from '../Skeleton';
+import { Spinner } from './Spinner';
 
 export const Country = () => {
     const [borderCountries, setBorderCountries] = useState([]);
@@ -36,7 +36,7 @@ export const Country = () => {
     };
 
     if (!country) {
-        return <Loading />;
+        return <Spinner />;
     }
     if (country.currencies) {
         currencies = country.currencies.map((currencie) => currencie.name);
