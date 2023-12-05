@@ -26,9 +26,9 @@ export const Navbar = () => {
             </div>
             <div className="flex flex-1 sm:items-stretch sm:justify-start">
               <NavLink to="/" className="flex flex-shrink-0 items-center">
-                <h2 className='px-3 py-2 text-2xl font-bold text-black dark:text-white'>
+                <h1 className='py-2 text-xl font-bold text-black dark:text-white'>
                   Where in the world?
-                </h2>
+                </h1>
               </NavLink>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
